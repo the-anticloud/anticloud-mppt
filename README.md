@@ -1,44 +1,19 @@
 # MPPT
 
-> ESPHome component to monitor a Victron device _(MPPT, SmarShunt, BMV, Phoenix Inverter ... )_ via ve.direct / UART TTL
+> An open source Arduino ESP32 MPPT Solar Charge Controller firmware equipped with charging algorithms, WiFi, LCD menus &amp; more! Stay tuned for the design release and video tutorial.
 
-**Category:** SOLAR · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/KinDR007/VictronMPPT-ESPHOME · **Pinned commit:** `f9cd94f9409fce853123510f3c3be40c8b1d9ec6` · **Vendor:** Anticloud FZ LLE
-
-> **Note:** this package vendors `https://github.com/KinDR007/VictronMPPT-ESPHOME` as the implementation for the `MPPT` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+**Category:** SOLAR · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE · **Pinned commit:** `fd4d73f1aea06d6b2ea0354d22c86279f60c432e` · **Vendor:** Anticloud FZ LLE
 
 ## What This Project Is
 
-ESPHome component to monitor a Victron device _(MPPT, SmarShunt, BMV, Phoenix Inverter ... )_ via ve.direct / UART TTL
+An open source Arduino ESP32 MPPT Solar Charge Controller firmware equipped with charging algorithms, WiFi, LCD menus &amp; more! Stay tuned for the design release and video tutorial.
 
 This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
 ## Installation
 
-You can install this component with [ESPHome external components feature](https://esphome.io/components/external_components.html) like this:
-```yaml
-external_components:
-  - source: github://KinDR007/VictronMPPT-ESPHOME@main
-
-uart:
-  id: uart_0
-  tx_pin: D8  # Not used! The communication is read-only
-  rx_pin: D7
-  baud_rate: 19200
-  rx_buffer_size: 256
-
-victron:
-  id: victron0
-  uart_id: uart_0
-
-sensor:
-  - platform: victron
-    victron_id: victron0
-    panel_voltage:
-      name: "Panel voltage"
-    battery_voltage:
-      name: "Battery voltage"
-    battery_current:
-      name: "Battery current"
+```
+# See the upstream README (linked above) for build steps.
 ```
 
 ## Usage
@@ -85,7 +60,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-24b1fceb8f8041809910bde9631210b752a43453c8b2a20d0f2d799aa7601be8
+06ca37526b8c8e4f1831b29dbc2dd3afe09c05151d7fbdf27483889528ff75cf
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.

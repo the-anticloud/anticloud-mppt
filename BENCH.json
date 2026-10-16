@@ -540,10 +540,10 @@
  "version": "1.0.0",
  "source": {
   "git": {
-   "head": "f9cd94f9409fce853123510f3c3be40c8b1d9ec6",
-   "url": "https://github.com/KinDR007/VictronMPPT-ESPHOME",
-   "branch": "main",
-   "sha_verified_from": "GitHub API commits/main | unified 2026-10-14 (API-exists + content/clone anchor)"
+   "url": "https://github.com/AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE",
+   "head": "fd4d73f1aea06d6b2ea0354d22c86279f60c432e",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/KinDR007/VictronMPPT-ESPHOME"
   }
  }
 }
