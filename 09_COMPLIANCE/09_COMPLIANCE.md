@@ -20,7 +20,7 @@ MPPT is a component of the Anticloud sovereign AI stack operating in the solar d
 | **FedRAMP** | AU-9, SC-13 | Append-only chain |
 | **PCI-DSS 4.0** | Req. 10.3, Req. 10.5 | AIOSS append-only |
 | **SOC 2 Type II** | CC6.1, CC7.2 | Ed25519 auth + AIOSS |
-| **ISO 27001** | Annex A controls | 9/9 controls verified |
+| **ISO 27001** | Annex A controls | 9/9 controls in progress |
 | **NIST AI RMF** | GOVERN, MAP, MEASURE | 8/8 controls verified |
 | **MITRE ATT&CK** | 12 techniques | 12/12 controls verified |
 
